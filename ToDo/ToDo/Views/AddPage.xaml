@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDo.Views.AddPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="BtnGuardar" Text="Guardar" Clicked="BtnGuardar_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nombre" FontSize="Medium" TextColor="{StaticResource colorPrimary}"></Label>
+            <Entry x:Name="nombre"></Entry>
+            <Label Text="Descripcion" FontSize="Medium" TextColor="{StaticResource colorPrimary}"></Label>
+            <Editor x:Name="descripcion"  HeightRequest="200"></Editor>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
